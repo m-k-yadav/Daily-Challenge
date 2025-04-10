@@ -1,0 +1,9 @@
+
+🧠 1. JavaScript Essentials — Deep Dive
+Focus: Master concepts you'll use heavily in React and backend logic
+
+    --map(), filter(), reduce() — how to use & when to use
+    --Destructuring objects & arrays
+    --Spread and Rest operators
+    --this keyword (overview only today)
+
