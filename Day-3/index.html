@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: rgb(0, 36, 86);
+            flex-direction: column;
+            
+        }
+        .child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(204, 222, 240);
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            letter-spacing: -1px;
+            word-spacing: -2px;
+            text-transform: uppercase;
+            background-color: rgba(153, 193, 248, 0.5);
+            padding: 20px;
+            border: 2px solid rgb(0, 128, 255);
+            border-radius: 50px; 
+            text-align: center;
+            width: 80%;
+        }
+        .ancestors {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            background-color: rgb(52, 50, 140);
+            border-radius: 200px;
+            padding: 60px 0 60px 0;
+        }
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            background-color: rgb(16, 0, 86);
+            border-radius: 120px;
+            padding: 60px 0 60px 0;
+        }
+
+        .clickToAdd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            background-color: rgb(98, 74, 206);
+            width: 80%;
+            padding: 20px 0 20px 0;
+            border-radius: 30px;
+            margin-bottom: 50px;
+        }
+        .clickToAdd button {
+            background-color: rgb(0, 36, 86);
+            color: rgb(204, 222, 240);
+            font-size: 20px;
+            letter-spacing: -0.5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: solid 1px rgb(149, 163, 176);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .clickToAdd button:hover {
+            background-color: rgb(0, 128, 255);
+            color: rgb(0, 36, 86);
+            transition: all 0.3s ease-in-out;
+            border: solid 1px rgb(0, 36, 86);
+        }
+        .list{
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+            flex-direction: column;
+            margin-top: 20px;
+            background-color: rgb(0, 36, 86);
+            width: 90%;
+            padding: 20px 0 20px 0;
+            border-radius: 30px;
+            list-style-type: none;
+        }
+        .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            list-style-type: none;
+            word-spacing: -1px;
+            letter-spacing: -1px;
+            margin: 5px 20px 15px 20px;
+            border-bottom: 3px solid rgb(149, 163, 176);
+        }
+        .item img{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            gap: 10px;
+        }
+        input{
+            width: 70%;
+            padding: 10px;
+            border: solid 1px rgb(149, 163, 176);
+            background-color: rgb(0, 36, 86);
+            color: rgb(204, 222, 240);
+            border-radius: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        .del:hover{
+            scale: 1.5;
+            transition: all 0.3s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ancestors">
+        <div class="parent">
+            <h1 class="child">Hello to Day 3</h1>
+        </div>
+    </div>
+    <div class="clickToAdd">
+        
+        <div class="input">
+            <input type = "text" placeholder="New Task" value="" id="inputField" onChange(value) maxlength="40"/>
+            <button>Click To Add</button>
+        </div>
+        <div class="list">
+            <ul class="listItems">
+                <li class="item"><p>Click No. 1</p><img class="del active" src="./delete.png" alt="del"></li>
+                <li class="item"><p>Click No. 1</p><img class="del" src="./delete.png" alt="del"></li>
+                <li class="item"><p>Click No. 1</p><img class="del" src="./delete.png" alt="del"></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
