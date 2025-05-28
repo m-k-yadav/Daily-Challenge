@@ -1,0 +1,47 @@
+✅ Day 1 – React Setup & Component Basics
+🎯 Goal:
+Understand how React works with components, props, and JSX — the foundation of every React project.
+
+🛠️ Tasks for Today:
+1. Setup Your React Project
+
+    Create a new project with Vite (faster) or create-react-app
+    Clean up the boilerplate (keep only what you need)
+
+    Organize folder structure like:
+
+        bash
+        Copy
+        Edit
+        /src
+        ├── /components
+        ├── /pages
+        ├── App.jsx
+        └── index.css
+2. Create Your First Components
+ Create 3 basic components inside /components:
+
+        Header.jsx
+        Footer.jsx
+        Card.jsx (accepts props like title, content, image)
+
+3. Use Props to Pass Data
+    In App.jsx, use the Card component multiple times with different data
+
+    Display props inside JSX using curly braces {}
+
+
+🔍 Bonus Practice:
+        Build a small ProfileCard component with the following props:
+        {
+        name: "Manish Kumar",
+        bio: "Aspiring Full-Stack Dev 🚀",
+        avatar: "https://i.pravatar.cc/150"
+        }
+
+
+📚 Resources (if needed):
+    React Official Docs – Getting Started
+    JSX Crash Course
+    Vite Setup Guide
+
