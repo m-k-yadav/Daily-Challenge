@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen bg-black">
+    <div class="bg-white px-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-7 rounded w-90">
+        <div id="progress" class="w-80 bg-gray-300 rounded-full h-4">
+            <div id="growth" class="h-full bg-green-600 rounded-full w-0"></div>
+        </div>
+        
+        <div class="flex justify-end">
+            <h5 id="percent">0%</h5> 
+        </div>
+        <div class="mt-4 flex justify-between">
+            <h3>Song.mp3</h3>
+            <button class="bg-green-600 cursor-pointer text-white rounded active:scale-95 font-medium px-5 py-2 text-xs">
+                Download File
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

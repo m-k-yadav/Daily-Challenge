@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 10rem;
+}
+.otp .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 8%;
+  margin: 5px;
+  padding: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  overflow: hidden;
+}
+.otp .box::-webkit-outer-spin-button,
+.otp .box::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 5px;
+  border-radius: 8px;
+}/*# sourceMappingURL=style.css.map */

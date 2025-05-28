@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(253, 251, 245);
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  padding: 0.75rem;
+}
+
+main {
+  padding: 1.5rem;
+  padding-top: 3rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.view-0 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-0 .head {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 0.7rem;
+}
+.view-0 .head .part1 {
+  display: flex;
+}
+.view-0 .head .part1 .fylla {
+  width: 3.2rem;
+  margin-top: -1rem;
+}
+.view-0 .head .part1 h1 {
+  margin-top: -0.5rem;
+  margin-left: 0.8rem;
+  font-weight: 500;
+  font-family: "Syne", sans-serif;
+}
+.view-0 .head .part2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.view-0 .head .part2 button {
+  display: flex;
+  margin-top: -1rem;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4rem;
+  padding: 0.5rem 1rem;
+  height: 2rem;
+  width: 3.5rem;
+}
+.view-0 .head .part2 button img {
+  display: flex;
+  width: 1.5rem;
+  margin-left: -1rem;
+}
+.view-0 .head .part2 .menu {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8rem;
+  margin-top: -1rem;
+}
+.view-0 .head .part2 .menu .line {
+  padding: 1px;
+  width: 3rem;
+  background-color: black;
+  margin-right: 0;
+}
+.view-0 .head .part3 {
+  display: none;
+}
+.view-0 hr {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-1 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1;
+}
+.view-1 .top p {
+  font-weight: 300;
+  opacity: 0.8;
+  font-family: sans-serif;
+}
+.view-1 .top h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  width: 70%;
+  letter-spacing: 0.005;
+}
+.view-1 .top img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 12.8rem;
+  border-radius: 1rem;
+}
+
+.view-2 .line {
+  border: 1px solid black;
+  margin: 2rem 0 0 0;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1;
+}
+.view-2 .top p {
+  font-weight: 300;
+  opacity: 0.8;
+  font-family: sans-serif;
+}
+.view-2 .top h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  width: 100%;
+  font-kerning: normal;
+}
+.view-2 .top button {
+  width: 9rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  background-color: black;
+  color: rgb(253, 251, 245);
+  font-family: "Roboto", sans-serif;
+}
+.view-2 .top hr {
+  width: 100%;
+  margin-top: 0.2rem;
+  height: 1px;
+  border: none;
+  background-color: black;
+}
+.view-2 div {
+  font-family: "Satoshi", sans-serif;
+}
+.view-2 div img {
+  margin-top: 1.5rem;
+  width: 4.5rem;
+}
+.view-2 div h1 {
+  font-weight: 400;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font: medium;
+}
+.view-2 div p {
+  padding-top: 1rem;
+  opacity: 0.7;
+  line-height: 1.7rem;
+}
+.view-2 hr {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: black;
+}
+
+@media (min-width: 1020px) {
+  body {
+    padding: 1rem;
+  }
+  main {
+    padding: 3rem;
+  }
+  .view-0 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .view-0 .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -1rem;
+    margin-bottom: 0.7rem;
+    justify-content: space-between;
+  }
+  .view-0 .head .part1 {
+    display: flex;
+    width: 25%;
+  }
+  .view-0 .head .part1 .fylla {
+    width: 3.2rem;
+    margin-top: -1rem;
+  }
+  .view-0 .head .part1 h1 {
+    margin-top: -0.5rem;
+    margin-left: 0.8rem;
+    font-weight: 500;
+    font-family: "Syne", sans-serif;
+  }
+  .view-0 .head .part2 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .view-0 .head .part2 button {
+    display: flex;
+    margin-top: -1rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4rem;
+    padding: 0.5rem 1rem;
+    height: 2rem;
+    width: 3.5rem;
+  }
+  .view-0 .head .part2 button img {
+    display: flex;
+    width: 1.5rem;
+    margin-left: -1rem;
+  }
+  .view-0 .head .part2 .menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8rem;
+    margin-top: -1rem;
+  }
+  .view-0 .head .part2 .menu .line {
+    padding: 1px;
+    width: 3rem;
+    background-color: black;
+    margin-right: 0;
+  }
+  .view-0 .head .part3 {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    gap: 2rem;
+    align-items: center;
+    margin-top: -10px;
+  }
+  .view-0 .head .part3 a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .view-0 .head .part3 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black; /* Change color if needed */
+    transition: width 0.3s ease-in-out;
+  }
+  .view-0 .head .part3 a:hover::after {
+    width: 100%;
+  }
+  .view-0 hr {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .view-1 {
+    width: 100%;
+  }
+  .view-1 .top p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: -1rem;
+  }
+  .view-1 .top h1 {
+    font-size: 6rem;
+  }
+  .view-1 .top img {
+    margin: 1rem 0 2rem 0;
+    width: full;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .view-2 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .view-2 .top {
+    display: flex;
+    width: 71%;
+    justify-content: space-between;
+  }
+  .view-2 .top h1 {
+    font-size: 5rem;
+  }
+  .view-2 .line {
+    height: auto;
+    border: 1px solid black;
+    margin: 1rem 2.5rem 0;
+  }
+  .view-2 .bottom {
+    margin-top: 1rem;
+    display: flex;
+    width: 41%;
+  }
+  .view-2 .bottom p {
+    font-size: 1.1rem;
+  }
+}
+.lines {
+  width: 100%;
+  border: 1px solid black;
+  height: 1px;
+  margin-top: 3rem;
+}
+
+.timeout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.timeout .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  background-color: #ccc;
+  padding: 30px;
+  border-radius: 20px;
+}
+.timeout .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.timeout .card h1 {
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: rgb(82, 74, 74);
+}
+.timeout .card h3 {
+  font-size: 1.5rem;
+  color: red;
+}
+.timeout .card button {
+  margin-top: 1rem;
+  background-color: rgb(61, 165, 235);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+}
+.pages .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+.pages .wrapper .page {
+  display: flex;
+  padding: 1rem;
+  background-color: rgb(1, 173, 173);
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.pages .wrapper .page .active {
+  display: flex;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

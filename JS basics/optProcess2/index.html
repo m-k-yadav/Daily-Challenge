@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .otp-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .otp-input {
+            width: 40px;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-container">
+        <h2>Enter OTP</h2>
+        <div>
+            <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, 'otp2')" id="otp1">
+            <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, 'otp3')" id="otp2">
+            <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, 'otp4')" id="otp3">
+            <input type="text" class="otp-input" maxlength="1" id="otp4">
+        </div>
+        <br>
+        <button class="btn" onclick="verifyOTP()">Verify OTP</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function moveToNext(current, nextFieldID) {
+            if (current.value.length === 1 && nextFieldID) {
+                document.getElementById(nextFieldID).focus();
+            }
+        }
+
+        function verifyOTP() {
+            const otp = document.getElementById("otp1").value +
+                        document.getElementById("otp2").value +
+                        document.getElementById("otp3").value +
+                        document.getElementById("otp4").value;
+            const message = document.getElementById("message");
+            const correctOTP = "1234"; // Example OTP
+            
+            if (otp === correctOTP) {
+                message.style.color = "green";
+                message.textContent = "OTP Verified Successfully!";
+            } else {
+                message.style.color = "red";
+                message.textContent = "Invalid OTP, please try again.";
+            }
+        }
+    </script>
+</body>
+</html>

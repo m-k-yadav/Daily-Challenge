@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none; /* For Chrome, Safari, and Edge */
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+          scrollbar-width: none; /* For Firefox */
+        }
+      </style>
+</head>
+<body>
+    <main class="w-full overflow-auto hide-scrollbar h-full py-8">
+        <nav class="flex px-[10rem] justify-between items-center">
+            <h1 class="text-xl font-medium tracking-tighter">Portfolio</h1>
+            <div class="links flex gap-10">
+                <a class="font-medium tracking-tighter text-xl" href="#">Home</a>
+                <a class="font-medium tracking-tighter text-xl opacity-30" href="#">Social</a>
+                <a class="font-medium tracking-tighter text-xl opacity-30" href="#">Projects</a>
+                <a class="font-medium tracking-tighter text-xl opacity-30" href="#">Contact</a>
+
+            </div>
+        </nav>
+
+        <section class="w-full px-[10rem] mt-20 flex justify-between items-end ">
+            <div class="left_heading">
+                <h6 class="tracking-tighter text-2xl -mb-3 font-bold">Hello I am,</h6>
+                <h1 class="tracking-tighter text-[12rem] leading-none -ml-3 font-bold">Manish.</h1>
+            </div>
+            <div class="right_heading flex gap-3 items-center mb-3 ">
+                <h4 class="font-medium tracking-tighter text-xl">[<span class="time"> 9 : 40 PM </span>]</h4>
+                <div class="w-32 h-[1px] bg-black"></div>
+                <h3 class="font-medium tracking-tight text-xl">Creative Frontend Developer</h3>
+            </div>
+        </section>
+
+        <section class="picture px-[10rem] w-full h-[40rem] mt-2">
+            <img
+                 class="w-full h-full object-cover object-[0%_60%]"
+                 src="./assets/journey.jpg" alt="journey">
+        </section>
+        <section class="about px-[10rem] w-full px-10 py-20 mt-40 mb-30 flex justify-center">
+            <div class="text text-center w-2/3 relative">
+                <img class="w-20 drop-shadow-2xl absolute -top-25 rotate-30 -left-15" src="./assets/image1.png" alt="">
+                <img class="w-20 drop-shadow-2xl absolute -top-30 right-0 rotate-330" src="./assets/image2.png" alt="">
+                <img class="w-20 drop-shadow-2xl absolute -bottom-40 left-20 rotate-320" src="./assets/image3.png" alt="">
+                <img class="w-20 drop-shadow-2xl absolute -bottom-30 right-1/2" src="./assets/react.png" alt="">
+                <img class="w-20 drop-shadow-2xl absolute -bottom-40 right-10 rotate-20" src="./assets/image4.png" alt="">
+                <h1 class="text-6xl font-bold tracking-tight mb-10">
+                    [ I design & build experiences]
+                </h1>
+                <p class="text-2xl font-medium ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda suscipit id optio commodi ipsa repudiandae. 
+                    Corrupti ad facere sequi. Totam, ducimus sunt iure esse, 
+                    autem aut quidem officia ea quae ut rem similique!
+                </p>
+            </div>
+            
+        </section>
+        <section class="w-full px-[10rem] px-10 py-20 mt-40  relative flex flex-col">
+           <div class="w-full px-10 py-8 flex gap-10 items-center bg-gray-200 z-[1] sticky top-0">
+            <h1 class="text-6xl font-medium tracking-tighter ">2021</h1>
+            <div class="h-1 w-40 bg-black "></div>
+            <h1 class="text-6xl font-medium tracking-tighter text-zinc-400">The Begining</h1>
+           </div>
+           <div class="imageContent w-full gap-20 flex px-10 py-8">
+            <div class="col w-1/3 flex flex-col gap-20 ">
+                <div class=" w-120 h-160 bg-black opacity-10"></div>
+                <div class="w-120 h-120 bg-black opacity-10"></div>
+                <div class="w-120 h-190 bg-black opacity-10"></div>
+            </div>
+            <div class="col  w-1/3 flex flex-col gap-20 pt-30">
+                <div class="w-120 h-160 bg-black opacity-10"></div>
+                <div class="w-120 h-120 bg-black opacity-10"></div>
+                <div class=" w-120 h-190 bg-black opacity-10"></div>
+            </div>
+            <div class="col  w-1/3 flex flex-col gap-20 pt-15">
+                <div class="w-120 h-120 bg-black opacity-10"></div>
+                <div class="w-120 h-190 bg-black opacity-10"></div>
+                <div class="w-120 h-160 bg-black opacity-10"></div>
+            </div>
+           </div>
+        </section>
+        <section class="w-full px-[10rem] px-10 py-20 relative flex flex-col">
+            <div class="w-full px-10 py-8 flex gap-10 items-center bg-gray-200 z-[1] sticky top-0">
+             <h1 class="text-6xl font-medium tracking-tighter ">2022</h1>
+             <div class="h-1 w-40 bg-black "></div>
+             <h1 class="text-6xl font-medium tracking-tighter text-zinc-400">Escalation</h1>
+            </div>
+            <div class="imageContent w-full gap-20 flex px-10 py-8">
+             <div class="col w-1/3 flex flex-col gap-20 ">
+                 <div class=" w-120 h-160 bg-black opacity-10"></div>
+                 <div class="w-120 h-120 bg-black opacity-10"></div>
+                 <div class="w-120 h-190 bg-black opacity-10"></div>
+             </div>
+             <div class="col  w-1/3 flex flex-col gap-20 pt-30">
+                 <div class="w-120 h-160 bg-black opacity-10"></div>
+                 <div class="w-120 h-120 bg-black opacity-10"></div>
+                 <div class=" w-120 h-190 bg-black opacity-10"></div>
+             </div>
+             <div class="col  w-1/3 flex flex-col gap-20 pt-15">
+                 <div class="w-120 h-120 bg-black opacity-10"></div>
+                 <div class="w-120 h-190 bg-black opacity-10"></div>
+                 <div class="w-120 h-160 bg-black opacity-10"></div>
+             </div>
+            </div>
+         </section>
+
+         <section class=" w-full py-40">
+            <div class="flex flex-col items-center">
+                <h1 class="text-5xl tracking-tight z-[1]">I am great at</h1>
+                <img class=" w-full flex overlaytext" src="./assets/teckStacks.jpg" alt="">
+            </div>
+        </section>
+        <section class="testimonial w-full px-[10rem]">
+            <h3 class="text-6xl font-medium">Client</h3>
+            <div class=" flex gap-15 leading-none items-center ">
+                <h1 class="text-[10rem] font-bold  tracking-tighter">Testimonials</h1>
+                <img class="w-50" src="./assets/right-arrow (1).png" alt="">
+                <h1 class="text-[10rem] font-bold  tracking-tighter">Works</h1>
+            </div>
+            <div class="workShowcase mt-20">
+                <div class="flex flex-col ">
+                    <h1 class="font-medium text-5xl tracking-tight">Britannia</h1>
+                    <div class="flex gap-5 items-center mt-3">
+                        <h3 class="font-medium text-2xl font-['IBM_3270']">2021</h3>
+                        <img class="w-10" src="./assets/right-arrow (1).png" alt="">
+                        <h3 class="font-medium text-2xl font-['IBM_3270']">Jorhat</h3>
+                    </div>
+                    <div class="mt-10 bg-red-300 w-full h-200">
+                        <img class=" w-full h-full object-cover object-[0%_55%]" src="https://images.unsplash.com/photo-1608070734668-e74dc3dda037?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-40 flex gap-20 justify-between">
+                    <div class="orangeSplash">
+                        <h1 class="font-medium text-5xl tracking-tight">Orange Splash</h1>
+                        <div class="flex gap-5 items-center mt-3">
+                            <h3 class="font-medium text-2xl font-['IBM_3270']">2023</h3>
+                            <img class="w-10" src="./assets/right-arrow (1).png" alt="">
+                            <h3 class="font-medium text-2xl font-['IBM_3270']">Mumbai</h3>
+                        </div>
+                        <div class="mt-10 bg-red-300 w-full h-200">
+                            <img class=" w-full h-full object-cover object-[0%_80%]" src="./assets/orange.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="palmJumerah pt-[8rem]">
+                        <h1 class="font-medium text-5xl tracking-tight">Palm Jumerah</h1>
+                        <div class="flex gap-5 items-center mt-3">
+                            <h3 class="font-medium text-2xl font-['IBM_3270']">2025</h3>
+                            <img class="w-10" src="./assets/right-arrow (1).png" alt="">
+                            <h3 class="font-medium text-2xl font-['IBM_3270']">Dubai</h3>
+                        </div>
+                        <div class="mt-10 bg-red-300 w-full h-200">
+                            <img class=" w-full h-full object-cover object-[0%_55%]" src="./assets/palm.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="mt-[8rem] px-[10rem] flex justify-between">
+            <h3 class="text-2xl font-medium">Manish Kumar Yadav</h3>
+            <h4 class="text-2xl font-medium">22 March. 2025 [09:40 AM]</h4>
+        </section>
+        <section class=" h-[5rem]">
+            
+        </section>
+    </main>
+
+    <script>
+        //let time= document.querySelector(".time");
+        setInterval(()=>{
+            let newTime = new Date();
+            let currentTime = newTime.getHours() + " : " + newTime.getMinutes() + " : " + newTime.getSeconds() ;
+            let str = newTime.getHours % 12 > 0 ? "PM" : "AM";
+            document.querySelector(".time").innerHTML = " "+currentTime + " " + str + " ";
+        }, 10)
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main >
+        <section class="view-0">
+            <div class="head">
+                <div class="part1">
+                    <img class="fylla" src="./assets/fylla.png" alt="">
+                    <h1>FYLLA</h1>
+                </div>
+
+                <div class="part3">
+                        <p><a href="./services">Services</a></p>
+                        <p><a href="./work">Work</a></p>
+                        <p><a href="./studio">Studio</a></p>
+                        <p><a href="./blog">Blog</a></p>
+                        <p><a href="./Pages">Pages</a></p>
+                </div>
+
+                <div class="part2">
+                    <button>
+                        <img src="./assets/light.png" alt="">
+                    </button>
+
+                    <div class="menu">
+                        <p class="line"></p>
+                        <br>
+                        <p class="line"></p>
+                        <br>
+                        <p class="line"></p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <hr>
+        </section>
+        <section class="view-1">
+            <div class="top">
+                <p>ABOUT US</p>
+                <h1 class="punchWord">Creative studio <br> that inspires.</h1>
+                <img src="./assets/f1.webp" alt="">
+            </div>  
+        </section>
+        <section class="view-2">
+            <div class="top">
+                <div class="text">
+                     <p>OUR VALUES</p>
+                     <h1>Our vision is to connect with the world trough innovation.</h1>
+                </div>
+                <div>
+                    <button>OUR SERVICES</button>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="line"></div>
+                <div class="descrip">
+                    <div class="vision">
+                        <img src="./assets/circle.png" alt="">
+                        <h1>VISION</h1>
+                        <P>Our relentless pursuit of a shared vision fuels our creativity and propels us forward. With clarity and foresight, we craft strategies that align with our clients' goals and aspirations, transforming their dreams into reality and shaping a future worth embracing.</P>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <img src="./assets/triangle.png" alt="">
+                        <h1>INNOVATION</h1>
+                        <P>Innovation is at the core of everything we do. We embrace curiosity, explore uncharted territories, and challenge the status quo. </P>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="./assets/loop.png" alt="">
+                        <h1>CONNECTION</h1>
+                        <P>We believe in the power of connection. We strive to build bridges between brands and their audiences, fostering genuine and lasting relationships. </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lines">
+            <div class="line-1"></div>
+        </section>
+        <section class="view-3">
+
+        </section>
+        <section class="timeout">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556347961-f9521a88cb8a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Samyra</h1>
+                <h3>Stranger</h3>
+                <button>Add Friend</button>
+            </div>
+        </section>
+        <section class="pages">
+            <div class="wrapper">
+                <h2 class="page">1</h2>
+                <h2 class="page">2</h2>
+                <h2 class="page">3</h2>
+                <h2 class="page">4</h2>
+                <h2 class="page">5</h2>
+            </div>
+        </section>
+    </main>
+    <script>
+        const btn = document.querySelector(".card button");
+        const h3 = document.querySelector(".card h3");
+
+        btn.addEventListener("click", ()=>{
+            function change(){
+                    let status = btn.innerHTML;
+                if(status == "Add Friend"){
+                    h3.innerHTML = "Friend";
+                    h3.style.color = "green";
+                    btn.innerHTML = ("Unfriend");
+                }else{
+                    h3.innerHTML = "Stranger";
+                    h3.style.color = "red";
+                    btn.innerHTML = ("Add Friend");
+                }
+                console.log("change");
+            }
+            setTimeout(change, 2000);
+        })
+        
+        const pagination= document.querySelectorAll(".page");
+
+        pagination.forEach(page =>{
+            page.addEventListener("click", ()=>{
+               if(page.classList.contains("active")){
+                page.classList.remove("active");
+                console.log(page)
+                page.style.color = "black";
+                page.style.backgroundColor = "rgb(1, 173, 173)";
+               }else{
+                page.classList.add("active");
+                page.style.color = "white";
+                page.style.backgroundColor = "black";
+                console.log(page)
+               }
+            })
+        })
+
+        pagination.forEach(page => {
+            page.addEventListener("mouseleave",()=>{
+                if (!page.classList.contains("active")) {
+            page.style.color = "";
+            page.style.backgroundColor = "";
+        }
+            })
+            page.addEventListener("mouseenter",()=>{
+                page.style.color = "blue";
+                page.style.backgroundColor = "yellow";
+            })
+        })
+          
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 12px 30px;
+}
+header{
+    padding: 3vw;
+    background-color: #e3e3e3;
+}
+
+/* article{
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(51, 50, 50);
+    width: 30%;
+    color: #fff;
+} */
+aside{
+    padding: 10px;
+    position: fixed;
+    right: 1px;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: translate(0, -50%);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ccc;
+}
+/* main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 110%;
+} */
+ .logo{
+    font-family: playfair display;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: burlywood 2px 2px;
+    text-decoration:underline;
+ }
+ section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    gap: 10px;
+    background-color: rgb(159, 181, 191);
+    font-size: 16px;
+    
+}
+.card{
+    background-color: rgb(51, 50, 50);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;;
+    width:  fit-content;
+    height: fit-content;
+}
+.card2{ 
+    background-color: rgb(208, 131, 131);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;
+    width:  fit-content;
+    height: fit-content;
+}
+.card3{
+    background-color: rgb(227, 67, 67);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;
+    width:  fit-content;
+    height: fit-content;
+}
+.card4{
+    background-color: rgb(45, 161, 200);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;
+    width:  fit-content;
+    height: fit-content;
+}
+.card5{
+    background-color: rgb(67, 227, 139);
+    color: #302929;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;
+    width:  fit-content;
+    height: fit-content;
+}
+.card6{
+    background-color: rgb(130, 156, 70);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 1;
+    width:  fit-content;
+    height: fit-content;
+}

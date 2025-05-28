@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <button id="loadData">Load Data</button>
+
+    <script>
+        const data = [
+            { id: 1, name: "Apple" },
+            { id: 2, name: "Banana" },
+            { id: 3, name: "Cherry" },
+        ];
+
+        function renderItem(item) {
+            const el = document.createElement("p");
+            el.innerText = item.name; // Bug here?
+            return el;
+        }
+
+        document.getElementById("loadData").addEventListener("click", () => {
+            data.forEach(item => {
+            const rendered = renderItem(item);
+            output.append(rendered); // Bug here?
+            });
+
+            console.log("Data loaded", data); // Bug here?
+        });
+    </script>
+
+</body>
+</html>

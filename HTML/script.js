@@ -1,0 +1,6 @@
+console.log("hello")
+console.warn("NO hello")
+console.error("What the hell")
+alert("hello")
+let name = prompt("Hello")
+console.log(name)

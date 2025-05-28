@@ -1,0 +1,9 @@
+JS advanced HOF callback closure
+
+-create af function that takes another funct as an argumnet and calls it after 3 sec 
+
+-implent own version of .map()  as higher order function
+
+- write a function that usess closure to crreaet a counter
+
+- implements a function that lmits how many times another functio  can be called

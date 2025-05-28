@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            font-family: monospace, sans-serif;        
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #e0dcdc;
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            gap: 30px;
+        }
+
+        h1{
+            word-spacing: -5px;
+        }
+        input{
+            padding: 5px;
+            background-color: rgb(245, 246, 245);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+        button{
+            padding: 5px;
+            border-radius: 10px;;
+            background-color: rgb(60, 203, 255);
+            border: none;
+            cursor: pointer;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lets Play a Game</h1>
+        <input type="number" placeholder="Enter Number" value="">
+        <button>check answer</button>
+        <img src="refresh.png" alt="reset-goal">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
